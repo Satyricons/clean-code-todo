@@ -2,21 +2,20 @@
   "name": "clean-code-todo",
   "version": "1.0.0",
   "type": "module",
-  "description": "Учебный репозиторий для задания «Clean Code» RS School",
+  "description": "Clean Code task for RS School Fullstack Engineering",
   "main": "app.js",
   "scripts": {
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{js,html,css,json,md}": "prettier --check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "eslint": "^10.13.0",
-    "globals": "^17.13.0",
-    "prettier": "^3.9.10"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Satyricons/clean-code-todo.git"
@@ -24,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/Satyricons/clean-code-todo/issues"
   },
-  "homepage": "https://github.com/Satyricons/clean-code-todo#readme"
+  "homepage": "https://github.com/Satyricons/clean-code-todo#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.10"
+  }
 }

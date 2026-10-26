@@ -113,8 +113,7 @@ const taskIncomplete = function () {
   bindTaskEvents(listItem, taskCompleted);
 };
 
-const ajaxRequest = function () {
-};
+const ajaxRequest = function () {};
 
 //The glue to hold it all together.
 
